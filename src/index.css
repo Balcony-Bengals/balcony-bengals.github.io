@@ -1,3 +1,7 @@
+@font-face { font-family: yellowtail; 
+  src: url('./Yellowtail-Regular.ttf'); } 
+
+
 body {
   margin: 0;
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
@@ -93,10 +97,10 @@ html, body, #root {
   width: 100%;
   padding-top: 20px;
   display: flex;
-  justify-content: left;
-  align-items: left;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
-  text-align: left;
+  text-align: center;
 }
 .second-div {
   width: 50%;
@@ -115,13 +119,16 @@ html, body, #root {
 
 .profile-name {
   color: #b81fff;
+  text-shadow: 2px 2px #e7f714;
+  font-family: yellowtail;
 }
 
 .social-holder {
-  margin-top: 30px ;
+  /* margin-top: 30px ; */
 }
 
 .start-text, .social-holder {
+  
   margin-left: 20px;
   margin-right: 20px;
 }
@@ -129,16 +136,48 @@ html, body, #root {
 .events-holder {
   padding-top: 20px;
   display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   flex-direction: column;
 }
 
 .event {
-  width: 100%;
+  width: 25%;
   display: flex;
   justify-content: center;
+  flex-direction: column;
   padding: 10px;
-  background: #b81fff;
+  margin-bottom: 20px;
+  background: #e09cff;
+  border-radius: 10px;
+  text-decoration: none;
+  color: black;
+  font-weight: bolder;
+  font-size: large;
+}
+
+.cover-image {
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.event p {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.date {
+}
+
+@media (max-width: 800px) {
+  .event {
+    width: 100%;
+  }
+  .cover-image {
+    border-radius: 0px;
+    margin: 0px;
+  }
 }
 
 
