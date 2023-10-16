@@ -1,6 +1,8 @@
 import React from 'react';
 import logo from '../logo.svg';
-import welcome2 from '../welcome2.jpg';
+import grambling from '../IMG_5719.jpg';
+import arkansas from '../IMG_5928.JPG';
+import auburn from '../IMG_6731.jpg';
 import cover1 from '../IMG_2913.JPG';
 import '../App.css';
 import '../styles/home.css'
@@ -30,13 +32,26 @@ function Home (){
                         <p class="date">4/22/2023</p>
                     </a> */}
 
-                    <a href="" class="event">
-                        <p>Coming Soon...</p>
-                        <img class="cover-image" src={welcome2}></img>
+                    <a target="_blank" href="https://www.dropbox.com/scl/fo/rtr7iy7q6khd7hnmwvlaj/h?rlkey=kk3usovb14q1vvqd26cmqant6&dl=0" class="event">
+                        <p>LSU vs Grambling</p>
+                        <img class="cover-image" src={grambling}></img>
                         <p>9/8/2023</p>
                     </a>
 
+                    <a target="_blank" href="https://www.dropbox.com/scl/fo/pgbqh9nkakxhd3bgvb2fo/h?dl=0&preview=IMG_5928.JPG&rlkey=t47yz0z6vg2oxarj7m8col13a" class="event">
+                        <p>LSU vs Arkansas</p>
+                        <img class="cover-image" src={arkansas}></img>
+                        <p>9/23/2023</p>
+                    </a>
+
+                    <a target="_blank" href="https://www.dropbox.com/scl/fo/qogvzs4fe1kfy96oqkhfx/h?rlkey=9s4ntpv6zutb0bb1ri6gsjied&dl=0" class="event">
+                        <p>LSU vs Auburn</p>
+                        <img class="cover-image" src={auburn}></img>
+                        <p>10/14/2023</p>
+                    </a>
+
                 </div>
+
             </div>
         </div>
       );
